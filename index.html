@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="competitonCountDown">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <a href="index.html"><h1>CountDown for boulder competiton</h1></a>
+        </div>
+
+        <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+         <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li id="navHomeButton" class="visible-xs active">
+            <a href="index.html">
+              <span class="glyphicon glyphicon-home"></span> Home</a>
+          </li>
+          <li id="navMenuButton">
+            <a href="#" ><br class="hidden-xs"> Menu</a>
+          </li>
+          <li>
+            <a href="#"><br class="hidden-xs"> About</a>
+          </li>
+          <li>
+            <a href="#"><br class="hidden-xs"> Awards</a>
+          </li>
+        </ul><!-- #nav-list -->
+      </div><!-- .collapse .navbar-collapse -->
+    </div><!-- .container -->
+  </nav><!-- #header-nav -->
+</header>
+    <div ng-controller="countDownController">
+      <h1>CountDown for boulder competiton</h1>
+    </div>
+  </body>
+</html>
